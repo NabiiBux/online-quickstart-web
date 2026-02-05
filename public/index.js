@@ -91,7 +91,7 @@ let googlePayClient;
 function onGooglePayLoaded() {
 
   googlePayClient = new google.payments.api.PaymentsClient({
-    environment: 'TEST',
+    environment: 'PRODUCTION',
     paymentDataCallback: paymentDataCallback
   });
 
@@ -138,14 +138,14 @@ function onGooglePaymentsButtonClicked() {
   const tokenizationSpecification = {
     type: 'PAYMENT_GATEWAY',
     parameters: {
-      gateway: 'example',
-      gatewayMerchantId: 'gatewayMerchantId'
+      gateway: 'stripe',
+      gatewayMerchantId: 'pk_live_51SvSa6C4XRCtBtaoC8ik6WyYnkgPh3tywa1tOSwWKkiq7CF87dnwQjzDFwFmJm1723nWgs5C9VdA6CUGnmNeoXbB00m6ITxaS6'
     }
   };
 
   const merchantInfo = {
-    merchantId: '01234567890123456789',
-    merchantName: 'Example Merchant Name'
+    merchantId: 'BCR2DN4TZCDIREQ4',
+    merchantName: 'GNB MENTOR',
   };
 
   // Use a card payment method including all relevant properties
