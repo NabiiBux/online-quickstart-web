@@ -263,7 +263,7 @@ function onCheckoutSubmit(e) {
   if (e && e.stopPropagation) e.stopPropagation();
   alert("Thanks For Shopping");
   window.location.hash = 'shop-success';
-  return True;
+  return false;
 }
 
 /**
