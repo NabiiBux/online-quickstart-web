@@ -139,7 +139,9 @@ function onGooglePaymentsButtonClicked() {
     type: 'PAYMENT_GATEWAY',
     parameters: {
       gateway: 'stripe',
-      gatewayMerchantId: 'pk_live_51SvSa6C4XRCtBtaoC8ik6WyYnkgPh3tywa1tOSwWKkiq7CF87dnwQjzDFwFmJm1723nWgs5C9VdA6CUGnmNeoXbB00m6ITxaS6'
+      stripe:version:  '2018-10-31'
+      stripe:publishableKey: 'pk_live_51SvSa6C4XRCtBtaoC8ik6WyYnkgPh3tywa1tOSwWKkiq7CF87dnwQjzDFwFmJm1723nWgs5C9VdA6CUGnmNeoXbB00m6ITxaS6'
+
     }
   };
 
