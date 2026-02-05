@@ -238,7 +238,7 @@ const constructTransactionInfo = (price, surcharges) => {
   return {
     totalPriceStatus: 'FINAL',
     totalPrice: (priceWithSurcharges * 1.1).toFixed(2),
-    totalPriceLabel: '$12.4',
+    totalPriceLabel: '$1.4',
     currencyCode: 'USD',
     displayItems: [
       {
